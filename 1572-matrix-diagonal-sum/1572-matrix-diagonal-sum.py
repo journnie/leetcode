@@ -4,15 +4,11 @@ class Solution:
         n = len(mat)
         diag_sum = 0
 
-        if n == 1:
-            return mat[0][0]
-
         for i in range(n):
-            diag_sum += mat[i][i] + mat[i][n-i-1]
+            diag_sum += mat[i][i] + mat[i][n - i - 1]
 
         if n % 2 != 0:
             mid = n // 2
             diag_sum -= mat[mid][mid]
             
-
         return diag_sum
