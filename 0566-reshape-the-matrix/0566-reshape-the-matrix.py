@@ -4,12 +4,12 @@ class Solution:
         m = len(mat)
         n = len(mat[0])
 
-        numbers = []
-        reshaped_mat = [[0 for i in range(c)] for j in range(r)]
-
         # the reshape operation with given parameters is not possible
         if m * n != r * c:
             return mat  # output the original matrix.
+
+        numbers = []
+        reshaped_mat = [[0 for i in range(c)] for j in range(r)]
         
         for row in mat:
             for element in row:
