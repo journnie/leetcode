@@ -1,9 +1,10 @@
 class Solution:
     def prefixCount(self, words: List[str], pref: str) -> int:
-        start_with = 0
-        for i in words:
-            start_bool = i.startswith(pref)
-            if start_bool == True:
-                start_with += 1
-        return start_with
-            
+        pref_len = len(pref)
+        prefix_count = 0
+
+        for word in words:
+            if word[0:pref_len] == pref:
+                prefix_count += 1
+
+        return prefix_count
