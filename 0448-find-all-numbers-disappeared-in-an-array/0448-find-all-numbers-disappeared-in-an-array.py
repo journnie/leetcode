@@ -1,11 +1,9 @@
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
-        n = len(nums)
+        k = len(nums)
         num_set = set(nums)
-        missing_num = []
+        all_set = set(range(1, k+1))
 
-        for i in range(1, n + 1):
-            if i not in num_set:
-                missing_num.append(i)
+        disappeared_nums = list(all_set - num_set)
 
-        return missing_num
+        return disappeared_nums
