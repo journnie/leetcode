@@ -1,10 +1,8 @@
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
-        customers = len(accounts)
-        money = []
-
-        for customer in range(customers):
-            money.append(sum(accounts[customer]))
-
-        return max(money)
-
+        richest = 0
+        for rich in accounts:
+            wealth = sum(rich)
+            if wealth > richest:
+                richest = wealth
+        return richest
