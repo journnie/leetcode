@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/check-if-matrix-is-x-matrix/">2319. Check if Matrix Is X-Matrix</a></h2><h3>Easy</h3><hr><div><p>A square matrix is said to be an <strong>X-Matrix</strong> if <strong>both</strong> of the following conditions hold:</p>
+<h2><a href="https://leetcode.com/problems/check-if-matrix-is-x-matrix">2319. Check if Matrix Is X-Matrix</a></h2><h3>Easy</h3><hr><p>A square matrix is said to be an <strong>X-Matrix</strong> if <strong>both</strong> of the following conditions hold:</p>
 
 <ol>
 	<li>All the elements in the diagonals of the matrix are <strong>non-zero</strong>.</li>
@@ -9,8 +9,9 @@
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2022/05/03/ex1.jpg" style="width: 311px; height: 320px;">
-<pre><strong>Input:</strong> grid = [[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]]
+<img alt="" src="https://assets.leetcode.com/uploads/2022/05/03/ex1.jpg" style="width: 311px; height: 320px;" />
+<pre>
+<strong>Input:</strong> grid = [[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]]
 <strong>Output:</strong> true
 <strong>Explanation:</strong> Refer to the diagram above. 
 An X-Matrix should have the green elements (diagonals) be non-zero and the red elements be 0.
@@ -18,8 +19,9 @@ Thus, grid is an X-Matrix.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2022/05/03/ex2.jpg" style="width: 238px; height: 246px;">
-<pre><strong>Input:</strong> grid = [[5,7,0],[0,3,1],[0,5,0]]
+<img alt="" src="https://assets.leetcode.com/uploads/2022/05/03/ex2.jpg" style="width: 238px; height: 246px;" />
+<pre>
+<strong>Input:</strong> grid = [[5,7,0],[0,3,1],[0,5,0]]
 <strong>Output:</strong> false
 <strong>Explanation:</strong> Refer to the diagram above.
 An X-Matrix should have the green elements (diagonals) be non-zero and the red elements be 0.
@@ -34,4 +36,3 @@ Thus, grid is not an X-Matrix.
 	<li><code>3 &lt;= n &lt;= 100</code></li>
 	<li><code>0 &lt;= grid[i][j] &lt;= 10<sup>5</sup></code></li>
 </ul>
-</div>
