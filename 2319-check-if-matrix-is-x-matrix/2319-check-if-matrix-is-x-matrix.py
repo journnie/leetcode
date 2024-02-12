@@ -1,14 +1,15 @@
 class Solution:
     def checkXMatrix(self, grid: List[List[int]]) -> bool:
-        for i in range(len(grid)):
-            # check if the green part has zero
-            if grid[i][i] == 0 or grid[i][len(grid)-1 - i] == 0:
+        # n x n matrix
+        n = len(grid)
+
+        for i in range(n):
+            if grid[i][i] == 0 or grid[i][n-i-1] == 0:
                 return False
-            # if non-zeros, change them into zeros
-            grid[i][i] = 0
-            grid[i][len(grid) - 1 - i] = 0
-            # check if the whole row is a list of zero
-            if grid[i] != [0] * len(grid[0]):
+            grid[i][i] = grid[i][n - i - 1] = 0
+
+        for i in range(n):
+            if sum(grid[i]) != 0:
                 return False
 
         return True
