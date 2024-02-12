@@ -6,9 +6,8 @@ class Solution:
         for i in range(n):
             if grid[i][i] == 0 or grid[i][n-i-1] == 0:
                 return False
+                
             grid[i][i] = grid[i][n - i - 1] = 0
-
-        for i in range(n):
             if sum(grid[i]) != 0:
                 return False
 
